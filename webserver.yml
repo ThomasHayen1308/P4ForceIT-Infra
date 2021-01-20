@@ -9,17 +9,6 @@
       update: yes
       version: master
 
-  - name: Copy application files
-    copy:
-      src: /var/lib/jenkins/workspace/Ansible-pipe/Application/
-      dest: /usr/share/nginx/html
-    become: yes
-
-  - name: "start nginx"
-    service:
-      name: nginx
-      state: started
-
   handlers:
     - name: restart nginx
       service:
