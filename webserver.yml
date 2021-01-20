@@ -2,10 +2,12 @@
   become: yes
   tasks:
 
-  - name: Clone a repo with separate git directory
+  - name: Pull github repo
     git:
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Front.git
       dest: /P4ForceIT-Front.git
+      update: yes
+      version: master
 
   - name: Copy application files
     copy:
