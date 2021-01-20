@@ -4,7 +4,7 @@
 
   - name: Pull github repo
     git:
-      repo: https://github.com/ThomasHayen1308/P4ForceIT-Front.git
+      repo: https://github.com/ThomasHayen1308/P4ForceIT-Front
       dest: /var/www/html/P4ForceIT-Front
       update: yes
       version: master
