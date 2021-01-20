@@ -2,7 +2,7 @@
   become: yes
   tasks:
 
-  - name: Get Git Repo
+  - name: "Get Git Repo"
     git:
       repo: git@github.com:ThomasHayen1308/P4ForceIT-Front.git
       dest: /var/www/html/
