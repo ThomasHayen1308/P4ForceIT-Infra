@@ -6,7 +6,6 @@
     git:
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Front.git
       dest: /P4ForceIT-Front.git
-      separate_git_dir: /var/www/html/P4ForceIT-Front
 
   - name: Copy application files
     copy:
