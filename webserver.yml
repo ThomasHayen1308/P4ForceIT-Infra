@@ -8,7 +8,7 @@
       dest: /var/www/html/P4ForceIT-Front
 
   - name: Build Angular Project
-    command: ng build --prod --no-build-optimizer
+    command: "ng build --prod --no-build-optimizer"
     args:
       chdir: "/var/www/html/P4ForceIT-Front"
 
