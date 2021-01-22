@@ -7,6 +7,9 @@
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Front
       dest: /var/www/html/P4ForceIT-Front
 
+  - name: Run Angular build command
+    raw: ng build
+
   - name: "Started nginx"
     service:
       name: nginx
