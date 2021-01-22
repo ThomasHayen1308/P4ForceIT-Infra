@@ -8,12 +8,9 @@
       dest: /var/www/html/P4ForceIT-Front
 
   - name: Change directory to Project folder
-    command: arg1
-    args:
-      chdir: /var/www/html/P4ForceIT-Front
+    command: cd /var/www/html/P4ForceIT-Front
    
-  - name: Run Angular build
-    command: ng build --prod --no-build-optimizer
+
 
   - name: "Started nginx"
     service:
