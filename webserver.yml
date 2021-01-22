@@ -8,7 +8,8 @@
       dest: /var/www/html/P4ForceIT-Front
 
   - name: Change directory to Project folder
-    command: cd /var/www/html/P4ForceIT-Front
+    command: cd /var/www/html/
+    register: P4ForceIT-Front
    
   - name: Run Angular build
     command: ng build
