@@ -13,7 +13,7 @@
       chdir: /var/www/html/P4ForceIT-Front
    
   - name: Run Angular build
-    command: ng build
+    command: ng build --prod --no-build-optimizer
 
   - name: "Started nginx"
     service:
