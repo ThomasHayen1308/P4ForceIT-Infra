@@ -8,6 +8,11 @@
       force: yes
 
   - name: "Change execution rights Maven Wrapper"
+    command: chmod +x mvnw
+    args:
+      chdir: /var/www/spring/P4ForceIT-Back
+
+  - name: "Run Maven Wrapper"
     command: nohup ./mvnw spring-boot:run &
     args:
       chdir: /var/www/spring/P4ForceIT-Back
