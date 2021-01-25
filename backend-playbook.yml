@@ -6,5 +6,4 @@
     git:
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Back
       dest: /var/www/spring/P4ForceIT-Back
-      key_file: /home/ubuntu/.ssh/id_rsa
       force: yes
