@@ -21,6 +21,7 @@
     command: /home/ubuntu/.nvm/versions/node/v15.6.0/bin/ng build --prod --no-build-optimizer
     args:
       chdir: /var/www/html/P4ForceIT-Front
+    ignore_errors: true
 
   - name: "Started nginx"
     service:
