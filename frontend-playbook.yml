@@ -9,7 +9,12 @@
 
   - name: Install packages based on package.json.
     community.general.npm:
-    path: /var/www/html/P4ForceIT-Front
+      path: /var/www/html/P4ForceIT-Front
+  
+  - name: Update packages based on package.json to their latest version.
+    community.general.npm:
+      path: /var/www/html/P4ForceIT-Front
+      state: latest
   
   - name: "Build Angular"
     command: /home/ubuntu/.nvm/versions/node/v15.6.0/bin/ng build --prod --no-build-optimizer
