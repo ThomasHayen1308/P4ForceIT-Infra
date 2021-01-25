@@ -8,7 +8,5 @@
       force: yes
 
   - name: "Change execution rights Maven Wrapper"
-    command: chmod +x mvnw
-    args:
-      chdir: /var/www/spring/P4ForceIT-Back
-
+    file: dest=/var/www/spring/P4ForceIT-Back/mvnw mode=a+x
+    
