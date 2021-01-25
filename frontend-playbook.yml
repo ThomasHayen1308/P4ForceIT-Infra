@@ -7,12 +7,12 @@
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Front
       dest: /var/www/html/P4ForceIT-Front
 
-  - name: "Install packages based on package.json"
-    community.general.npm:
+  - name: Install packages based on package.json.
+    npm:
       path: /var/www/html/P4ForceIT-Front
-  
-  - name: "Update packages based on package.json to their latest version"
-    community.general.npm:
+
+  - name: Update packages based on package.json to their latest version.
+    npm:
       path: /var/www/html/P4ForceIT-Front
       state: latest
   
