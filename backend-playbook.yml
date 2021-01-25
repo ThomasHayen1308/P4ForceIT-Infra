@@ -4,6 +4,6 @@
 
   - name: "Get Git Repo"
     git:
-      repo: https://github.com/ThomasHayen1308/P4ForceIT-Back
+      repo: git@github.com:ThomasHayen1308/P4ForceIT-Back.git
       dest: /var/www/spring/P4ForceIT-Back
       force: yes
