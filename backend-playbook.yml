@@ -11,6 +11,5 @@
     file: dest=/var/www/spring/P4ForceIT-Back/mvnw mode=a+x
     
   - name: "Run Maven Wrapper"
-    command: nohup ./mvnw spring-boot:run &
-    args:
-      chdir: /var/www/spring/P4ForceIT-Back
+    shell: "cd /var/www/spring/P4ForceIT-Back && nohup ./mvnw spring-boot:run &"
+    ignore_errors: true
