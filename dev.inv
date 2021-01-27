@@ -1,4 +1,4 @@
 [webservers]
 ec2-3-138-233-34.us-east-2.compute.amazonaws.com ansible_user=ubuntu
 [jenkins]
-localhost ansible_user=ubuntu
+ec2-3-133-37-118.us-east-2.compute.amazonaws.com ansible_user=ubuntu
