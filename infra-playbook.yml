@@ -3,7 +3,7 @@
 
   - name: "Get Git Repo"
     git:
-      repo: git@github.com:ThomasHayen1308/P4ForceIT-Back.git
-      dest: /var/www/spring/P4ForceIT-Back
+      repo: git@github.com:ThomasHayen1308/P4ForceIT-Infra.git
+      dest: /var/lib/jenkins/
       force: yes
       
