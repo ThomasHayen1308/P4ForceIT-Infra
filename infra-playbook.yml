@@ -1,4 +1,5 @@
 - hosts: jenkins
+  become: yes
   tasks:
 
   - name: "Get Git Repo"
