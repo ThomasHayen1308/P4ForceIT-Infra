@@ -2,4 +2,3 @@
 ec2-3-138-233-34.us-east-2.compute.amazonaws.com ansible_user=ubuntu
 [jenkins]
 ec2-3-133-37-118.us-east-2.compute.amazonaws.com ansible_user=ubuntu
-DIS IS A TEST
