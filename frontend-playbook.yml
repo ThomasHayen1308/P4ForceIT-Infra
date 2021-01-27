@@ -1,0 +1,34 @@
+- hosts: webservers
+  become: yes
+  tasks:
+
+  - name: "Get Git Repo"
+    git:
+      repo: https://github.com/ThomasHayen1308/P4ForceIT-Front
+      dest: /var/www/html/P4ForceIT-Front
+      force: yes
+
+  - name: Install packages based on package.json.
+    npm:
+      path: /var/www/html/P4ForceIT-Front
+
+  - name: Update packages based on package.json to their latest version.
+    npm:
+      path: /var/www/html/P4ForceIT-Front
+      state: latest
+  
+  - name: "Build Angular"
+    command: /home/ubuntu/.nvm/versions/node/v15.6.0/bin/ng build --prod --no-build-optimizer
+    args:
+      chdir: /var/www/html/P4ForceIT-Front
+    ignore_errors: true
+
+  - name: "Started nginx"
+    service:
+      name: nginx
+      state: started
+
+  - name: "Restart nginx"
+    service:
+      name: nginx
+      state: restarted
