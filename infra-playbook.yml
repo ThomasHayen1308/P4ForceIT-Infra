@@ -4,6 +4,6 @@
   - name: "Get Git Repo"
     git:
       repo: git@github.com:ThomasHayen1308/P4ForceIT-Infra.git
-      dest: /var/lib/jenkins/jobs/project-infra/infra-playbook.yml
+      dest: /var/lib/jenkins/jobs/project-infra/
       force: yes
       
