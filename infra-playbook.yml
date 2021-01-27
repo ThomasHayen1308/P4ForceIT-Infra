@@ -6,5 +6,5 @@
     git:
       repo: https://github.com/ThomasHayen1308/P4ForceIT-Infra.git
       dest: /var/lib/jenkins/jobs/project-infra/P4ForceIT-Infra/
-      force: yes
+      force: no
       
